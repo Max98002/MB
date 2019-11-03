@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../fonts/Roboto-Light/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/Roboto-Bold/Roboto-Bold.eot');
+  src: url('../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin light {
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: 400;
+}
+
+@mixin bold {
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700;
+}
