@@ -24,3 +24,17 @@ body
   color: $text-color
   font-size: 16px
   background-color: $bg-color 
+.section
+  &-title
+    +bold
+    font-size: 43px
+    letter-spacing: -0.43px
+    color: $text-color
+  &__title
+    margin-bottom: 40px
+@media screen and ( max-width: 575px )
+  .section
+    &-title
+      font-size: 30px
+    &__title
+      margin-bottom: 35px
