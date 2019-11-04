@@ -1,0 +1,51 @@
+.contact
+  &-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 188px
+    border: 4px solid #f7ec89
+    border-radius: 21px
+    &__text 
+      color: $white
+      font-size: 34px
+    &__link
+      font-size: 20px 
+      letter-spacing: -0.24px
+      color: $white
+      text-decoration: none
+      &::after
+        content: ''
+        display: block
+        width: 50%
+        height: 2px
+        margin: auto
+        background-color: $primary
+        transition: all .3s
+        transform: translateY(5px)
+      &:hover
+        transition: all .3s
+        color: $primary
+        &::after
+          width: 100%
+@media (max-width: 991.98px) 
+  .contact
+    &-wrap
+      height: 128px
+      &__text
+        font-size: 20px
+      &__link
+        font-size: 18px
+@media (max-width: 767.98px)
+  .contact
+    &-wrap
+      flex-direction: column
+      align-items: center
+      justify-content: space-evenly
+@media (max-width: 575.98px)
+  .contact
+    &-wrap
+      &__text
+        font-size: 16px
+      &__link
+        font-size: 15px
