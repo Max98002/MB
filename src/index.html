@@ -67,60 +67,64 @@
   </header>
   <!-- /.header -->
   <main>
-    <section class="section myWork">
+    <section class="section projects">
       <h2 class="section-title section__title">Мої роботи</h2>
       <!-- /.section-title section__title -->
-      <div class="myWork-wrap">
-        <div class="myWork-slider">
-          <div class="myWork__item">
-            <div class="myWork-image">
-              <img class="myWork-image__slide" src="./img/my-work/work-img.png" alt="">
+      <div class="projects-wrap">
+        <div class="projects-slider">
+          <div class="projects__item">
+            <div class="projects-image">
+              <img class="projects-image__slide" src="./img/my-work/work-img.png" alt="">
             </div>
-            <h3 class="myWork__title">Repair</h3>
-            <p class="myWork__subtitle">Сайт для ремонту квартир</p>
-            <a href="#" class="myWork__link green-link">Працює для перегляду</a>
+            <h3 class="projects__title">Repair</h3>
+            <p class="projects__subtitle">Сайт для ремонту квартир</p>
+            <a href="#" class="projects__link green-link">Працює для перегляду</a>
           </div>
-          <div class="myWork__item">
-            <div class="myWork-image">
-              <img class="myWork-image__slide" src="./img/my-work/work-img.png" alt="">
+          <div class="projects__item">
+            <div class="projects-image">
+              <img class="projects-image__slide" src="./img/my-work/work-img.png" alt="">
             </div>
-            <h3 class="myWork__title">Repair</h3>
-            <p class="myWork__subtitle">Сайт для ремонту квартир</p>
-            <a href="#" class="myWork__link green-link">Працює для перегляду</a>
+            <h3 class="projects__title">Repair</h3>
+            <p class="projects__subtitle">Сайт для ремонту квартир</p>
+            <a href="#" class="projects__link green-link">Працює для перегляду</a>
           </div>
-          <div class="myWork__item">
-            <div class="myWork-image">
-              <img class="myWork-image__slide" src="./img/my-work/work-img.png" alt="">
+          <div class="projects__item">
+            <div class="projects-image">
+              <img class="projects-image__slide" src="./img/my-work/work-img.png" alt="">
             </div>
-            <h3 class="myWork__title">Repair</h3>
-            <p class="myWork__subtitle">Сайт для ремонту квартир</p>
-            <a href="#" class="myWork__link green-link">Працює для перегляду</a>
+            <h3 class="projects__title">Repair</h3>
+            <p class="projects__subtitle">Сайт для ремонту квартир</p>
+            <a href="#" class="projects__link green-link">Працює для перегляду</a>
           </div>
         </div>
-        <!-- /.myWork-slider -->
-        <div class="myWork-arrow">
-          <div class="myWork-arrow__left">
+        <!-- /.projects-slider -->
+        <div class="projects-arrow">
+          <div class="projects-arrow__left">
             <img src="./img/my-work/left_arrow.png" alt="">
           </div>
-          <div class="myWork-arrow__right">
+          <div class="projects-arrow__right">
             <img src="./img/my-work/left_arrow.png" alt="">
             <!-- <img src="./img/my-work/right_arrow.png" alt=""> -->
           </div>
         </div>
-        <!-- /.myWork-arrow -->
+        <!-- /.projects-arrow -->
       </div>
-      <!-- /.myWork-wrap -->
+      <!-- /.projects-wrap -->
     </section>
     <!-- /.section -->
   </main>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <script>
-    $('.myWork-slider').slick({
-      prevArrow: $('.myWork-arrow__left'),
-      nextArrow: $('.myWork-arrow__right')
+    $('.projects-slider').slick({
+      prevArrow: $('.projects-arrow__left'),
+      nextArrow: $('.projects-arrow__right'),
+      dots: true,
+      dotsClass: '.projects-slider__dots'
     });
   </script>
 
