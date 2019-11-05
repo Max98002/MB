@@ -47,7 +47,7 @@ $(document).ready(function () {
       }
     },
     errorElement: "div",
-    errorClass: "invalid",
+    errorClass: "error",
     messages: {
       username: {
         required: "Укажите имя",
