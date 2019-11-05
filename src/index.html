@@ -18,13 +18,13 @@
       </div>
       <!-- /.header-image -->
       <nav class="header-menu">
-        <a href="#" class="header-menu__link">Мої роботи</a>
+        <a href="#my-work" class="header-menu__link">Мої роботи</a>
         <!-- /.header-menu__link -->
-        <a href="#" class="header-menu__link">Роботи</a>
+        <a href="#services" class="header-menu__link">Послуги</a>
         <!-- /.header-menu__link -->
-        <a href="#" class="header-menu__link">Відгуки</a>
+        <!-- <a href="#" class="header-menu__link">Відгуки</a> -->
         <!-- /.header-menu__link -->
-        <a href="#" class="header-menu__link">Про мене</a>
+        <a href="#about-me" class="header-menu__link">Про мене</a>
         <!-- /.header-menu__link -->
       </nav>
       <!-- /.header-menu -->
@@ -59,7 +59,7 @@
         </li>
       </ul>
       <!-- /.header-bottom__social -->
-      <div class="header-bottom__button">
+      <div class="header-bottom__button modal-btn">
         <button class="button header-bottom__btn">Напишіть мені</button>
       </div>
     </div>
@@ -68,7 +68,7 @@
   <!-- /.header -->
   <main>
     <section class="section projects">
-      <h2 class="section-title section__title">Мої роботи</h2>
+      <h2 class="section-title section__title" id="my-work">Мої роботи</h2>
       <!-- /.section-title section__title -->
       <div class="projects-wrap">
         <div class="projects-slider">
@@ -114,7 +114,7 @@
     </section>
     <!-- /.section projects -->
     <section class="section services">
-      <h2 class="section-title section__title">Послуги</h2>
+      <h2 class="section-title section__title" id="services">Послуги</h2>
       <!-- /.section-title section__title -->
       <div class="services-wrap">
         <div class="services-wrap__card">
@@ -130,7 +130,7 @@
               містить основну інформацію про організацію, приватну особу, компанію, товари
               чи послуги, прайс-листи, контактні дані.
             </p>
-            <a href="#" class="services-wrap__link green-link">Напишіть щоб узнати більше</a>
+            <a href="#" class="services-wrap__link green-link modal-btn">Напишіть щоб узнати більше</a>
           </div>
         </div>
         <div class="services-wrap__card">
@@ -145,14 +145,14 @@
               або
               в результаті пошуку.
             </p>
-            <a href="#" class="services-wrap__link green-link">Напишіть щоб узнати більше</a>
+            <a href="#" class="services-wrap__link green-link modal-btn">Напишіть щоб узнати більше</a>
           </div>
         </div>
       </div>
       <!-- /.services-wrap -->
     </section>
     <!-- /.section services -->
-    <section class="section about">
+    <section class="section about" id="about-me">
       <div class="section-title section__title">Про мене</div>
       <!-- /.section-title section__title -->
       <div class="about-wrap">
@@ -200,12 +200,58 @@
   </main>
 
   <footer class="footer author">
-    <div class="authot__text">Author of the design - <a href="https://dribbble.com/bilanychnick" class="author__link" target="_blank">NICK BILANYCH</a></div>
+    <div class="authot__text">Author of the design - <a href="https://dribbble.com/bilanychnick" class="author__link"
+        target="_blank">NICK BILANYCH</a></div>
   </footer>
+  <!-- /.footer author -->
 
+  <!-- .modal -->
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-close modal__close"></button>
+      <div class="modal-block">
+        <form action="#" method="POST" class="form modal-form" id="form-validate" novalidate="novalidate">
+          <div class="input__group">
+            <input type="text" class="input modal__input" name="username" placeholder="Ім’я">
+          </div>
+          <div class="input__group">
+            <input type="email" class="input modal__input" name="email" placeholder="Email">
+          </div>
+          <button class="button modal__button" type="submit">Напишіть мені</button>
+        </form>
+        <!-- /.form modal-form -->
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- arrow-up -->
+  <div class="arrow-up" id="up">
+    <div class="arrow-up__wrap">
+      <?xml version="1.0"?>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+        x="0px" y="0px" width="100%" viewBox="0 0 438.533 438.533"
+        style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve" class="">
+        <g transform="matrix(0.9999 -2.44905e-16 2.44905e-16 0.9999 0.0219266 0.0219266)">
+          <g>
+            <path
+              d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0   c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267   c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407   s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062   C438.533,179.485,428.732,142.795,409.133,109.203z M361.74,259.517l-29.123,29.129c-3.621,3.614-7.901,5.424-12.847,5.424   c-4.948,0-9.236-1.81-12.847-5.424l-87.654-87.653l-87.646,87.653c-3.616,3.614-7.898,5.424-12.847,5.424   c-4.95,0-9.233-1.81-12.85-5.424l-29.12-29.129c-3.617-3.607-5.426-7.898-5.426-12.847c0-4.942,1.809-9.227,5.426-12.848   l129.62-129.616c3.617-3.617,7.898-5.424,12.847-5.424s9.238,1.807,12.846,5.424L361.74,233.822   c3.613,3.621,5.424,7.905,5.424,12.848C367.164,251.618,365.357,255.909,361.74,259.517z"
+              data-original="#000000" class="active-path" data-old_color="#000000" fill="#F7EC89" />
+          </g>
+        </g>
+      </svg>
+
+    </div>
+  </div>
+  <!-- /.arrow-up -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- main script -->
+  <script src="./js/main.js"></script>
+  <!-- main script -->
 
   <!-- Slick Slider -->
   <script src="./js/slick.min.js"></script>

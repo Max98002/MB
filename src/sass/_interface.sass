@@ -4,7 +4,7 @@ img
   max-width: 100%
 button, input, a
   outline: none
-button
+.button
   letter-spacing: -0.16px
   font-size: 16px
   padding: 15px 50px
@@ -54,5 +54,38 @@ body
     color: darken($primary, 20%)
     &::after
       background-color: darken($primary, 20%)
-    
+
+.input
+  width: 100%
+  padding-left: 20px
+  padding-bottom: 10px
+  letter-spacing: -0.24px
+  font-size: 24px
+  color: lighten(#22221d, 50%)
+  background-color: transparent
+  border: none
+  border-bottom: 2px solid $primary
+  &__group
+    width: 100%
+    margin-bottom: 50px
+    &:nth-of-type(2)
+      margin-bottom: 97px
+@media (max-width: 575.98px)
+  .input
+    font-size: 18px
+@media (max-width: 420.98px)
+  .input
+    &__group
+      margin-bottom: 40px
+      &:nth-of-type(2)
+        margin-bottom: 80px
+.arrow-up
+  position: fixed
+  bottom: 1%
+  right: 1%
+  width: 45px
+  cursor: pointer
+@media (max-width: 767.98px)
+  .arrow-up
+    display: none
      
