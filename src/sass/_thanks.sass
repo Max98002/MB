@@ -1,0 +1,47 @@
+.thanks
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+  background-color: rgba(13, 13, 13, 0.85)
+  &-active
+    display: flex
+  &-dialog
+    position: relative
+    width: 450px
+    padding: 0 40px
+    border: 3px solid $primary
+    background-color: $bg-color
+    border-radius: 20px
+    box-shadow: inset 0 0 95px rgba(0, 0, 0, 0.38)
+  &-block 
+    width: 100%
+    &__text
+      font-size: 25px
+      margin-bottom: 70px
+      text-align: center
+  &-wrap
+    position: relative
+    &__sticker
+      position: absolute
+      top: -50%
+      left: 50%
+      width: 16%
+      margin: auto
+    &__boy
+      width: 30%
+      margin: auto
+      img
+        display: block
+@media screen and ( max-width: 430px )
+  .thanks
+    &-dialog
+      padding: 0 20px
+      margin: 0 10px
+    &-block
+      &__text
+        font-size: 18px

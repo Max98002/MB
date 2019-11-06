@@ -37,9 +37,11 @@ $(document).ready(function () {
   // Валідація форми
   $('#form-validate').validate({
     rules: {
+      field: { accept: "[a-zA-Z]+" },
       username: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 8,
       },
       email: {
         required: true,
@@ -50,12 +52,13 @@ $(document).ready(function () {
     errorClass: "error",
     messages: {
       username: {
-        required: "Укажите имя",
-        minlength: jQuery.validator.format("Осталось cимволов! {0}")
+        required: "Вкажіть ім'я",
+        minlength: jQuery.validator.format("Залишилось {0} символи"),
+        maxlength: jQuery.validator.format("Не більше {0} символів")
       },
       email: {
-        required: "Заполните поле Email",
-        email: "Введите корректный email"
+        required: "Заповніть поле Email",
+        email: "Введіть коректний Email"
       }
     },
     submitHandler: function (form) {
@@ -65,8 +68,14 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log("Hello Все гуд: " + response);
-          $('#brif-form')[0].reset();
-          thanksmodal.addClass('thanksmodal_active');
+          $('.modal-form')[0].reset();
+          modal.removeClass('modal-active');
+          var thanks = $('#thanks');
+          thanks.addClass('thanks-active');
+          function close() {
+            thanks.removeClass('thanks-active');
+          }
+          setTimeout(close, 3000);
         },
         error: function (jqHXR, textStatus, errorThrown) {
           console.log(jqHXR + " " + textStatus);
@@ -74,7 +83,6 @@ $(document).ready(function () {
       });
     }
   });
-
   // Валідація форми
 
 });
