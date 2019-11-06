@@ -130,7 +130,8 @@
               містить основну інформацію про організацію, приватну особу, компанію, товари
               чи послуги, прайс-листи, контактні дані.
             </p>
-            <a href="#" class="services-wrap__link green-link services_btn">Напишіть щоб узнати більше</a>
+            <a href="#" data-target="businessCard" class="services-wrap__link green-link services_btn">Напишіть щоб
+              узнати більше</a>
           </div>
         </div>
         <div class="services-wrap__card">
@@ -145,7 +146,8 @@
               або
               в результаті пошуку.
             </p>
-            <a href="#" class="services-wrap__link green-link services_btn">Напишіть щоб узнати більше</a>
+            <a href="#" data-target="lending" class="services-wrap__link green-link services_btn">Напишіть щоб узнати
+              більше</a>
           </div>
         </div>
       </div>
@@ -250,37 +252,20 @@
     <div class="servicesModal-dialog">
       <button class="modal-close modal__close servicesModal-close"></button>
       <div class="modal-block servicesModal-block">
-        <div class="services-wrap__card servicesModal-block__card">
-          <div class="services-wrap__image servicesModal__image">
-            <img src="./img/work/work-1.jpg" alt="">
-          </div>
-          <div class="services-wrap__text servicesModal-wrap__text">
-            <div class="services-wrap__price servicesModal-wrap__price">$500</div>
-            <h3 class="services-wrap__title"><span class="services-wrap__decor">Сайт Візитка</h3>
-            <h2 class="servicesModal__title">Що входить</h2>
-            <ul class="servicesModal-menu">
-              <li class="servicesModal-menu__item">Розробка ТЗ</li>
-              <li class="servicesModal-menu__item">Створення дизайну</li>
-              <li class="servicesModal-menu__item">Верстка сторінок сайту</li>
-              <li class="servicesModal-menu__item">Мобільний адаптив</li>
-              <li class="servicesModal-menu__item">Встановлення на хостинг</li>
-              <li class="servicesModal-menu__item">Підключення доменного імені</li>
-              <li class="servicesModal-menu__item">Тестування</li>
-              <li class="servicesModal-menu__item">Підключення Google Analytics</li>
-            </ul>
-          </div>
+        <div class="columnQ">
+
         </div>
-        <form action="mail.php" method="POST" class="form modal-form servicesModal-form" id="service-validate"
-          novalidate="novalidate">
-          <div class="input__group">
-            <input type="text" class="input modal__input" name="username" placeholder="Ім’я">
-          </div>
-          <div class="input__group">
-            <input type="email" class="input modal__input" name="email" placeholder="Email">
-          </div>
-          <button class="button modal__button" type="submit">Напишіть мені</button>
-        </form>
-        <!-- /.form modal-form -->
+          <form action="mail.php" method="POST" class="form modal-form servicesModal-form" id="service-validate"
+            novalidate="novalidate">
+            <div class="input__group">
+              <input type="text" class="input modal__input" name="username" placeholder="Ім’я">
+            </div>
+            <div class="input__group">
+              <input type="email" class="input modal__input" name="email" placeholder="Email">
+            </div>
+            <button class="button modal__button" type="submit">Напишіть мені</button>
+          </form>
+          <!-- /.form modal-form -->
       </div>
     </div>
     <!-- /.modal-dialog -->

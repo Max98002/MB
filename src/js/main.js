@@ -17,10 +17,15 @@ $(document).ready(function () {
   services__button.on('click', function (eventm) {
     eventm.preventDefault();
     modal__services.addClass('servicesModal-active');
+    var target = $(this).attr('data-target');
+    $('.columnQ').load(target+".html")
   });
   modal_servicesClose.on('click', function () {
     modal__services.removeClass('servicesModal-active');
   });
+
+
+
   // Modal-services-active
 
 
