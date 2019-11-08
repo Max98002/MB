@@ -5,7 +5,9 @@ $(document).ready(function () {
   var services__button = $('.services_btn');
   var modal__services = $('#servicesModal');
   var modal_servicesClose = $('.servicesModal-close');
-
+  var submit_btn = $('.modal__button');
+  var img_load = $('.modal__button_image');
+  // main modal
   modal__button.on('click', function (event) {
     event.preventDefault();
     modal.addClass('modal-active');
@@ -13,20 +15,25 @@ $(document).ready(function () {
   modal__close.on('click', function () {
     modal.removeClass('modal-active');
   });
+  // main modal
+
   // Modal-services-active
   services__button.on('click', function (eventm) {
     eventm.preventDefault();
     modal__services.addClass('servicesModal-active');
     var target = $(this).attr('data-target');
-    $('.columnQ').load(target+".html")
+    $('.columnQ').load(target + ".html")
   });
   modal_servicesClose.on('click', function () {
     modal__services.removeClass('servicesModal-active');
   });
-
-
-
   // Modal-services-active
+
+  // submit-modal
+  submit_btn.on('click', function () {
+    img_load.addClass('modal__button_image-active')
+  });
+  // submit-modal
 
 
   // Прокрутка До секцій
@@ -88,6 +95,7 @@ $(document).ready(function () {
           console.log("Hello Все гуд: " + response);
           $('.modal-form')[0].reset();
           modal.removeClass('modal-active');
+          img_load.removeClass('modal__button_image-active');
           var thanks = $('#thanks');
           thanks.addClass('thanks-active');
           function close() {

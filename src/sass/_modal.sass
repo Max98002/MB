@@ -18,6 +18,8 @@
     background-color: $bg-color
     border-radius: 20px
     box-shadow: inset 0 0 95px rgba(0, 0, 0, 0.38)
+    animation-name: flipInX
+    animation-duration: 1s
   &-form
     display: flex
     flex-direction: column
@@ -50,6 +52,19 @@
     border: 1px solid $primary
     font-size: 16px
     +light
+    &_image
+      position: absolute
+      right: 10px
+      display: none
+      margin-left: 5px
+      max-width: 25px
+      img
+        animation-name: load
+        animation-duration: 1s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+      &-active
+        display: block
 @media (max-width: 991.98px) 
   .modal
     &-dialog
@@ -68,3 +83,7 @@
     &__button
       padding: 15px 30px
       font-size: 14px
+      &_image
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
