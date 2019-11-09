@@ -110,24 +110,6 @@ div.error
   .arrow-up
     display: none
 
-@keyframes flipInX
-  from
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
-    animation-timing-function: ease-in
-    opacity: 1
-  40%
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
-    animation-timing-function: ease-in
-  60%
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
-    opacity: 1
-  80%
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
-  to
-    transform: perspective(400px)
-.flipInX
-  backface-visibility: visible
-  animation-name: flipInX
 
 @keyframes zoomIn
   from
@@ -137,31 +119,6 @@ div.error
     opacity: 1
 .zoomIn
   animation-name: zoomIn
-
-@keyframes rollIn
-  from
-    opacity: 0
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)
-  to
-    opacity: 1
-    transform: translate3d(0, 0, 0)
-.rollIn
-  animation-name: rollIn
-
-@keyframes jackInTheBox 
-  from 
-    opacity: 0
-    transform: scale(0.1) rotate(30deg)
-    transform-origin: center bottom
-  50% 
-    transform: rotate(-10deg)
-  70% 
-    transform: rotate(3deg)
-  to 
-    opacity: 1
-    transform: scale(1)
-.jackInTheBox
-  animation-name: jackInTheBox
 
 @keyframes load
   from
